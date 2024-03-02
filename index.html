@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="">
+        <h1>HTML/CSS Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="#student-info">INFO</a></li>
+                <li><a href="#html-questions" accesskey="H">HTML</a></li>
+                <li><a href="#css-questions" accesskey="C">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">Student Info</h2>
+                <div class="info">
+                    <label for="name">Student Name:</label>
+                    <input id="name" name="Name" type="text">
+                </div>
+                <div class="info">
+                    <label for="email">Email Address:</label>
+                    <input id="email" name="Email" type="email">
+                </div>
+                <div class="info">
+                    <label for="dob">Date of birth<span class="sr-only">(Date of birth)</span>:</label>
+                    <input id="dob" name="Date of birth" type="date">
+                </div>
+            </section>
+            <section role="region" aria-labelledby="html-questions">
+                <h2 id="html-questions">HTML Questions</h2>
+                <div class="question-block">
+                    <p>1</p>
+                    <fieldset class="question" name="Question 1">
+                        <legend>HTML is a coding language. True or false?</legend>
+                        <ul class="answers-list">
+                            <li><label for="q1-a1"><input type="radio" name="Q1" value="True" id="q1-a1">True</label></li>
+                            <li><label for="q1-a2"><input type="radio" name="Q1" value="False" id="q1-a2">False</label></li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>2</p>
+                    <fieldset class="question" name="Question 2">
+                        <legend>HTML is difficuly. True or false?</legend>
+                        <ul class="answers-list">
+                            <li><label for="q2-a1"><input type="radio" name="Q2" value="True" id="q2-a1">True</label></li>
+                            <li><label for="q2-a2"><input type="radio" name="Q2" value="False" id="q2-a2">False</label></li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">CSS Questions</h2>
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="q3">CSS means Creative Serial Style. True or false?</label>
+                    </div>
+                    <div class="answer">
+                        <select name="Question 3" id="q3">
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="question-block">
+                        <label for="q4">Any comments or query?</label>
+                    </div>
+                    <div class="answer">
+                        <textarea name="Comments or query" id="q4" cols="30" rows="4" placeholder="Your answer here..."></textarea>
+                    </div>
+                </div>
+            </section>
+            <input type="submit" name="Submit" id="submit" value="Send">
+        </form>
+    </main>
+    <footer>
+        <address>
+            <strong>All Rights Reserved.&copy;</strong>
+        </address>
+    </footer>
+</body>
+</html>
